@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>
+		Audio Player
+	</title>
+	<script src="player.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.4.0/fabric.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<style type="text/css">
+		h3{
+			text-align: center;
+			margin-top: 30px;
+		}
+		#canvas_container{
+			margin: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid
+		}
+		#controls_container{
+			text-align: center;
+		}		
+	</style>
+</head>
+<body>
+	<h3>Audio Player</h3>	
+	<div id="canvas_container"></div>
+	<div id="controls_container">
+		<button class="btn btn-primary" onclick="handle_playPause()">PLAY / PAUSE</button>			
+	</div>
+</body>
+</html>
